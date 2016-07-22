@@ -1,6 +1,6 @@
 {
   "name": "hapi-generator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Add generators and promises to your hapi handlers",
   "main": "index.js",
   "scripts": {
@@ -13,12 +13,11 @@
     "promise",
     "handler"
   ],
-  "author": "",
+  "author": "Estate <team@tryestate.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/estate/hapi-generator.git"
   },
-  "author": "Estate <team@tryestate.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/estate/hapi-generator/issues"
