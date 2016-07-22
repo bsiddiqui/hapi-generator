@@ -1,6 +1,8 @@
-# hapi-promise
+# hapi-generator
 
-Add generators and promises to your hapi handlers
+Add generators and promises to your [hapi](https://github.com/hapijs/hapi) handlers
+
+## Usage
 
 ```javascript
 let server = new Hapi.Server()
@@ -10,14 +12,14 @@ server.register(require('hapi-generator'), err => {
   if (err) throw err
 })
 
-// Now you're free to pass an generator or promise as a handler
+// Now you're free to use a generator or promise as a handler
 server.route({
   method: 'POST',
   path: '/generator',
   handler: {
     generator: function * (request, reply) {
       let result = yield database.find()
-      return result // Just return it and the plugin will cal reply() for you
+      return result // Just return and the plugin will call reply() for you
     }
   }
 })
@@ -27,8 +29,8 @@ server.route({
   path: '/generator',
   handler: {
     promise: function (request, reply) {
-      // Errors are automatically handled too
-      return database.find().then(() => { throw new Error('Wooops!') })
+      // Errors are automatically handled as well
+      return database.find().then(() => { throw new Error('Whooops!') })
     }
   }
 })
@@ -50,7 +52,7 @@ server.route({
 })
 ```
 
-### Testing
+## Testing
 
 ```bash
 git clone git@github.com:estate/hapi-generator.git
