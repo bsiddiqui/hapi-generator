@@ -1,0 +1,38 @@
+{
+  "name": "hapi-generator",
+  "version": "0.0.0",
+  "description": "Add generators and promises to your hapi handlers",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && lab --verbose --colors --assert code",
+    "test-cov": "npm test -- -r console -o stdout -r html -o coverage/coverage.html -r lcov -o coverage/lcov.info"
+  },
+  "keywords": [
+    "hapi",
+    "generator",
+    "promise",
+    "handler"
+  ],
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estate/hapi-generator.git"
+  },
+  "author": "Estate <team@tryestate.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estate/hapi-generator/issues"
+  },
+  "homepage": "https://github.com/estate/hapi-generator#readme",
+  "devDependencies": {
+    "bluebird": "^3.4.1",
+    "code": "^3.0.1",
+    "eslint": "^2.10.2",
+    "hapi": "^13.5.0",
+    "lab": "^10.9.0",
+    "standard": "^7.1.2"
+  },
+  "dependencies": {
+    "co": "^4.6.0"
+  }
+}
