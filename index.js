@@ -18,7 +18,7 @@ exports.register = (server, options, next) => {
       if (options && options.reply === false) {
         co(options.handler.bind(null, request, reply)).catch(reply)
       } else {
-        co(options.bind(null, request, reply)).then(reply)
+        co(options.bind(null, request, reply)).then(reply, reply)
       }
     }
   })
