@@ -1,6 +1,6 @@
 {
   "name": "hapi-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add generators and promises to your hapi handlers",
   "main": "index.js",
   "scripts": {
